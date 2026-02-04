@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Main box */
+  .container {
+    width: 340px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  h3 {
+    margin-top: 15px;
+    color: #444;
+  }
+  
+  /* Paragraph */
+  p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Inputs */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4facfe;
+  }
+  
+  /* Radio buttons */
+  label {
+    display: block;
+    text-align: left;
+    margin: 6px 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Links */
+  a {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #4facfe;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Messages */
+  #msg,
+  #message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Results */
+  .container span {
+    font-weight: bold;
+    color: #333;
+  }
